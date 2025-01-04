@@ -4,14 +4,14 @@
 import math
 
 
-def judge(d, queen):
+def n_queens_judge(d, queen):
     for i in range(d):
         if (queen[d] == queen[i]) or (abs(queen[i] - queen[d]) == (d - i)):
             return False
     return True
 
 
-def dfs(d, n=8, queen=None, a=None, cnt=None):
+def n_queens_dfs(d, n=8, queen=None, a=None, cnt=None):
     if d >= n:
         print("No.{}".format(cnt))
         cnt += 1
@@ -22,9 +22,9 @@ def dfs(d, n=8, queen=None, a=None, cnt=None):
         return cnt
     for i in range(n):
         queen[d] = i
-        if (a[d][i] != 1) and judge(d, queen):
+        if (a[d][i] != 1) and n_queens_judge(d, queen):
             a[d][i] = 1
-            cnt = dfs(d=d + 1, n=n, queen=queen, a=a, cnt=cnt)
+            cnt = n_queens_dfs(d=d + 1, n=n, queen=queen, a=a, cnt=cnt)
             a[d][i] = 0
     return cnt
 
@@ -32,7 +32,7 @@ def dfs(d, n=8, queen=None, a=None, cnt=None):
 def n_queens(n=8, cnt=1):
     queen = [-1 for _ in range(n)]
     a = [[0 for _ in range(n)] for _ in range(n)]
-    dfs(0, n=n, queen=queen, a=a, cnt=cnt)
+    n_queens_dfs(0, n=n, queen=queen, a=a, cnt=cnt)
 
 
 if __name__ == '__main__':

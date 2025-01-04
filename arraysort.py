@@ -7,11 +7,28 @@
 from typing import List
 
 
-def quicksort():
-    pass
+def quicksort(array: List, start=None, end=None) -> None:
+    if start is None:
+        start, end = 0, len(array)-1
+    if start >= end:
+        # print(array)
+        return
+    else:
+        base = array[start]
+        lp, rp = start, end
+        while lp < rp:
+            while lp < rp and array[rp] >= base:
+                rp -= 1
+            array[lp] = array[rp]
+            while lp < rp and array[lp] <= base:
+                lp += 1
+            array[rp] = array[lp]
+        array[lp] = base
+        quicksort(array, start, lp-1)
+        quicksort(array, lp+1, end)
 
 
-def mergesort(array: List):
+def mergesort(array: List) -> List:
     if len(array) == 1:
         return array
     elif len(array) == 2:
@@ -46,4 +63,6 @@ if __name__ == '__main__':
         [1, 5, 2, 6, 3, 4, 7, 9, 8, 10]
     ]
     for testarr in testarr_list:
-        print(mergesort(testarr))
+        # print(mergesort(testarr))
+        quicksort(testarr)
+        print(testarr)
