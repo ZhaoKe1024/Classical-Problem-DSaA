@@ -29,7 +29,11 @@
 - merge sort: arraysort.py
 
 ## Algorithm on Graph
-- Shortest Path on Graph
+- Shortest Path on Graph(Dijkstra, Prim, Floyd)
 - Topological Sorting on Activities in Vertices.
 - Topological Series
 - Maximum Time Limit for a Project on Activities on Edges.
+
+## Algorithm on Tree
+- Minimum Spanning Tree(MST)
+- Huffman Tree
