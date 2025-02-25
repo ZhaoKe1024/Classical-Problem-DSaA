@@ -27,6 +27,10 @@
 - binary search: bisearch.py
 - quick sort: arraysort.py
 - merge sort: arraysort.py
+- A* algorithm: Astar.py
+  - 4 directions A*: (-1, 1), (1, 1), (1, -1), (-1, -1)
+  - 8 directions A*: (-1, 0), (-1, 1), (0, 1), (1, 1), (0, -1), (1, 0), (1, -1), (-1, -1)
+- ...
 
 ## Algorithm on Graph
 - Shortest Path on Graph(Dijkstra, Prim, Floyd)

@@ -35,6 +35,10 @@
 - binary search: bisearch.py
 - 快速排序: arraysort.py：分治法
 - 归并排序: arraysort.py：分治法
+- A*算法(A star Algorithm)
+  - 上下左右4个方向的A*算法
+  - 上下左右和四角的8个方向的A*算法
+- ...
 
 ## Algorithm on Graph
 - Shortest Path on Graph
