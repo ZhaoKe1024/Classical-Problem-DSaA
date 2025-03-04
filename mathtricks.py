@@ -58,12 +58,13 @@ def gcd(a: int, b: int) -> int:
 
 
 if __name__ == '__main__':
-    print(gcd(54, 21))
-    print(gcd(54, 18))
+    # print(gcd(54, 21))
+    # print(gcd(54, 18))
     # print(fastpow(2, 0))
     # print(fastpow(2, 1))
     # print(fastpow(2, 8))
     # print(fastpow(2, 7))
+    print(fastpowmod(4, 1989, 5))
     # print(fastpowmod(2, 0, 3))
     # print(fastpowmod(2, 1, 3))
     # print((2 ** 8) % 3)
