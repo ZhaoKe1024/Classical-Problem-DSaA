@@ -14,14 +14,18 @@
 
 ## Backtracking
 - N Queens: backtracking_nqueens.py
+- Find all subsets of an array 
+- Find all subsets of an array with repeated numbers
 
 ## Math Trick
 ./mathtricks.py
 - about fast pow and powmod.
+- find prime numbers using Eratosthenes Sieve Method:eratosthenes_sieve(num: int)->int.
+- Judge whether a number is prime: is_prime(num:int)->bool, is_prime1(num:int)->bool
+- Decompose a natural number into prime factors: number_factorising(num:int)->List[int]
+- greatest Common Divisor:gcd(a: int, b: int)->int.
 - about the usage of XOR.
 - about the factor.
-- find prime numbers using Eratosthenes Sieve Method:eratosthenes_sieve(num: int)->int.
-- greatest Common Divisor:gcd(a: int, b: int)->int.
 
 ## Search and Sort
 - binary search: bisearch.py
