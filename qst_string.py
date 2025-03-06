@@ -2,7 +2,7 @@
 # -*- coding: utf_8 -*-
 # @Time : 2025/3/5 9:23
 # @Author: ZhaoKe
-# @File : stringq.py
+# @File : qst_string.py
 # @Software: PyCharm
 
 

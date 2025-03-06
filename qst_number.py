@@ -2,7 +2,7 @@
 # -*- coding: utf_8 -*-
 # @Time : 2025/3/5 11:46
 # @Author: ZhaoKe
-# @File : numberq.py
+# @File : qst_number.py
 # @Software: PyCharm
 import math
 
